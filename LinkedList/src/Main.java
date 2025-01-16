@@ -12,6 +12,8 @@ public class Main {
         list.showLinkedList();
         list.insertAtIndex(2,55);
         list.showLinkedList();
+        list.deleteAtIndex(2);
+        list.showLinkedList();
     }
 }
 

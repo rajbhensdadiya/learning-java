@@ -47,6 +47,22 @@ public class LinkedList {
         }
     }
 
+    public void deleteAtIndex(int index) {
+
+        if (index == 0) {
+            head = head.next;
+        } else {
+            Node n = head;
+            Node prev = null;
+            for (int i = 0; i < index-1; i++) {
+                n = n.next;
+            }
+            prev = n.next;
+            n.next = prev.next;
+            System.out.println("Deleted " + prev.data);
+        }
+    }
+
     public void showLinkedList() {
         Node temp = head;
         if (head == null) {
